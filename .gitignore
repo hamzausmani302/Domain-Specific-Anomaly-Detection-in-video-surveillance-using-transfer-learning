@@ -4,6 +4,7 @@
 *.npy
 *.h5
 *.json
+__pycache__
 
 # Logs
 logs
