@@ -1,3 +1,10 @@
+*.mat
+*.pdf
+*.mp4
+*.npy
+*.h5
+*.json
+
 # Logs
 logs
 *.log
