@@ -1,4 +1,4 @@
-# AnomalyDetection_CVPR18
+# Domain Specific anomaly detection in video surveillance using transfer learning
 
 
 The folliwing program is a domain specific version of anomaly detection.
