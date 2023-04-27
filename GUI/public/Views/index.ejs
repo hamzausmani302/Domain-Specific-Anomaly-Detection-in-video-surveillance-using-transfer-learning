@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "/socket.io/socket.io.js"></script>
+    
+    <title>Document</title>
+    <script src="../Views/conn.js" defer></script>
+     
+</head>
+<body style="background-color:cornflowerblue">
+      
+    <div>
+        <h1 style="text-align: center;">Domain Specific Anomaly Detection Using Transfer Learning</h1>
+        <!-- <div id="camerabox" style="display:flex;flex-direction: row;justify-content:flex-end;">
+            <select name="cameras" id="cameras">
+                    
+                    <option value="frontGate">front gate garden</option>
+                    <option value="outsideSports">Outside Sports Room</option>
+                    
+                    
+            </select>
+                
+        </div> -->
+
+
+        <form method="POST" id="file-form" action="fileupload" enctype="multipart/form-data">
+
+        <input type="file" name="uploadfile" id="file-input" />
+        <br />
+        <label for="result-type">Result Type: </label>
+        <select name="result-type" id="result-type">
+            <option value="image">Image</option>
+            <option value="video">Video</option>
+        </select>
+        <br>
+        <input type="submit"/>
+
+    </form>
+
+    </div>
+    <script>
+        function printmodel(){
+            console.log(model);
+        }
+        var model = "frontGate";
+        document.getElementById("cameras").addEventListener("change" , function(e){
+            model = e.target.value;
+        })
+    </script>
+</body>
+</html>

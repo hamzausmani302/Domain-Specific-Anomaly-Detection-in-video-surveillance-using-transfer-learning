@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./videoViewImage.js" defer></script>
+    <title>Document</title>
+</head>
+<body style="background-color:cornflowerblue">
+    <!-- <select name="cameras" id="cameras">
+                    
+        <option value="frontGate">front gate garden</option>
+        <option value="outsideSports">Outside Sports Room</option>
+        
+        
+</select> -->
+
+    <div id="video-container">
+    
+        <script>
+            
+        </script>
+
+        <div style="background-color: aliceblue;padding:20px">
+            <!-- <select name="cams" id="cams" onchange="changeCamera()">
+                    
+                <option value="frontGate">front gate garden</option>
+                <option value="outsideSports">Outside Sports Room</option>
+                
+                
+        </select> -->
+            <h6>Group Members</h6>
+        
+       
+        <ul>
+            <li> Hamza Usmani = 19k-0146 </li>
+            <li> Ibad Saleem = 19k-0220 </li>
+            <li> Abdul Rehman = 19k-0166 </li>
+        </ul>
+        <span style="font-weight: 800;">Selected Video : </span>
+       
+        <p  id="filename"><%= message %></p>
+        <br />
+        <hr />
+        <span style="font-weight: 800;">Time of the day  : </span>
+        <div>
+        <select name="time-model" id="time-model">
+            <option value="day">Day</option>
+            <option value="night">Night</option>
+        </select>
+        </div>
+         
+    </div>
+    <br />
+        <span style="font-weight: 800;">Selected Video : </span>
+        
+
+        <h3><%- code %></h3>
+
+    </div>
+    <div id="video-flex">
+
+    </div>
+    <script>
+        document.getElementById("time-model").addEventListener("change" , function(e){
+            timeOfDay = e.target.value ;
+        })
+        
+         
+       
+    </script>
+    
+    <button onclick="printmodel()">print time of day for model </button>
+    <button onclick="handleClick()"> Run script</button>
+</body>
+</html>

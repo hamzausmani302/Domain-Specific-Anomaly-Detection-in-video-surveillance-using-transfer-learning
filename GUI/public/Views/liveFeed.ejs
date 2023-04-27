@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "/socket.io/socket.io.js"></script>
+    
+    <script src="liveDetect.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body style="background-color:cornflowerblue">
+        <h1 style="text-align: center;">Live Detection</h1>
+        <div style="padding:20px;display: flex;flex-direction: row;justify-content: center;">
+              select Camera :
+              <div  id="selector-container"></div>
+        </div>
+
+        <div style="display: flex;flex-direction: row;justify-content: center;">
+          <button style="width: 20%;height: 60px;border-radius: 2%;" onclick="runDetection()">Start Detection</button>
+        
+        </div>
+        <div id="video-container"></div>
+  </body>
+</html>
