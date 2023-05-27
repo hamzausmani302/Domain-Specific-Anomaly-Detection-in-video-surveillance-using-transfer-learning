@@ -22,7 +22,7 @@ Run demo.py to run the code on the demo video in 'input' folder. Visualization o
 
 - [Dr Muhammad Atif Tahir](https://scholar.google.at/citations?user=tBKYSE0AAAAJ&hl=en)    (Supervisor)
 - [Hamza Usmani]()
-- [Ibad Saleem]()
+- [Ibad Saleem](www.github.com/ibadsaleem)
 - [Abdul Rehman]()
 
 
